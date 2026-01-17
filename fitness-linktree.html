@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Fitness Journey</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .bio {
+            color: #666;
+            line-height: 1.6;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-button {
+            background: white;
+            border: 2px solid #667eea;
+            color: #667eea;
+            padding: 18px 30px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            display: block;
+            text-align: center;
+        }
+
+        .link-button:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+        }
+
+        .social-button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #667eea;
+            font-size: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .social-button:hover {
+            background: #667eea;
+            color: white;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-image">FIT</div>
+            <h1>Ben O'Meara</h1>
+            <p class="bio">
+                2:44 marathoner, with 5+ years of running experience, 3+ years of hybrid training experience, 
+                and passionate about supporting others to achieve their running goals.
+                <br><br>
+                <strong>My Current Goals:</strong><br>
+                Marathon: 2:38 | Half Marathon: 1:16:30<br>
+                10km: 35:00 | 5km: 16:30
+            </p>
+        </div>
+
+        <div class="links">
+            <a href="#coaching" class="link-button">🏋️ 1 on 1 Coaching</a>
+            <a href="#programs" class="link-button">🏃 Running Programs</a>
+            <a href="#pacing" class="link-button">⏱️ Pacing</a>
+            <a href="https://calendly.com/benomeara" target="_blank" class="link-button">📧 Book a Call</a>
+        </div>
+
+        <div class="social-links">
+            <a href="https://instagram.com/benomearafitness" target="_blank" class="social-button" title="Instagram">📷</a>
+            <a href="https://youtube.com/@benomearafitness" target="_blank" class="social-button" title="YouTube">▶️</a>
+        </div>
+    </div>
+</body>
+</html>
